@@ -87,14 +87,14 @@
             />
           </svg>
         </button>
-        <button class="button" data-edit>
+        <button class="button" data-run>
           <svg
             class="button_icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             fill="currentColor"
-            class="bi bi-play"
+            class="bi-bi-play"
             viewBox="0 0 16 16"
           >
             <path
@@ -104,7 +104,7 @@
             >
           </svg>
         </button>
-        <button class="button" data-edit>
+        <button class="button" data-rerun>
           <svg
             class="button_icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -127,16 +127,17 @@
         <section class="timer_audio">
           <audio
             src="./assets/sounds/mixkit-vintage-telephone-ringtone-1356.wav"
+            data-audio
             loop
           ></audio>
-          <button class="button hide" data-edit>
+          <button class="button hide" data-alarm title="Stop alarm">
             <svg
               class="button_icon button_icon_alarm"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="bi bi-clock"
+              class="bi-bi-clock"
               viewBox="0 0 16 16"
             >
               <path
@@ -150,5 +151,10 @@
         </section>
       </article>
     </main>
+    <script src="./js/app.js"></script>
+    <script>
+      const timer = new Timer();
+      timer.initializeTimer();
+    </script>
   </body>
 </html>
