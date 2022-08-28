@@ -23,7 +23,7 @@
             class="clock_input"
             data-timer-input
           />
-          <label for="minutes" class="clock_label">hours</label>
+          <label for="hours" class="clock_label">hours</label>
         </section>
         <section class="clock">
           <input
@@ -36,9 +36,10 @@
             class="clock_input"
             data-timer-input
           />
-          <label for="seconds" class="clock_label">minutes</label>
+          <label for="minutes" class="clock_label">minutes</label>
         </section>
-        <a href="https://github.com/Kamil-Drozdz">
+        <div id="MyClockDisplay" class="clock_live" onload="showTime()"></div>
+        <a href="https://github.com/Kamil-Drozdz" target="_blank">
           <button class="github_button_icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,63 +66,29 @@
             class="clock_input"
             data-timer-input
           />
-          <label for="hour" class="clock_label">seconds </label>
+          <label for="seconds" class="clock_label">seconds </label>
         </section>
       </article>
       <article class="timer_buttons">
         <button class="button" data-edit>
-          <svg
-            class="button_icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            class="bi bi-check2-square"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"
-            />
-            <path
-              d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"
+          <svg class="button_icon" width="32" height="32" fill="currentColor">
+            <use
+              xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#check-circle"
             />
           </svg>
         </button>
         <button class="button" data-run>
-          <svg
-            class="button_icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            class="bi-bi-play"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+          <svg class="button_icon" width="32" height="32" fill="currentColor">
+            <use
+              xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#play-circle"
             />
-
-            >
           </svg>
         </button>
         <button class="button" data-rerun>
-          <svg
-            class="button_icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            class="bi bi-arrow-repeat"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+          <svg class="button_icon" width="32" height="32" fill="currentColor">
+            <use
+              xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#arrow-counterclockwise"
             />
-            <path
-              fill-rule="evenodd"
-              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
-            />
-            >
           </svg>
         </button>
         <section class="timer_audio">
