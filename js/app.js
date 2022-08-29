@@ -10,7 +10,7 @@ class Timer {
     this.audio = null;
     this.alarm = null;
 
-    this.iconsPath = "js\bootstrap-icons.svg";
+    this.iconsPath = "node_modules/bootstrap-icons/bootstrap-icons.svg#";
 
     this.isEdit = true;
     this.isCounting = false;
